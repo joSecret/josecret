@@ -1,0 +1,14 @@
+{% set classes = [
+  lClass,
+  fileTitle in lHref ? ' active' : null,
+  lActive is defined ? ' active' : null
+] %}
+
+<a
+  class="{{- classes|join -}}"
+  {{ lActive is defined ? 'aria-current="page"' }}
+  href="{{ lHref is defined ? lHref ~'.html' : '#' }}">
+  {{ lLabel }}
+</a>
+
+{# include "../default/link.twig" with { lClass: 'nav-link', lActive: TRUE, lLabel: 'Documentation' } #}

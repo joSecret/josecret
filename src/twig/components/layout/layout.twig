@@ -1,0 +1,30 @@
+{% extends "html.twig" %}
+
+{% block body %}
+<div class="page-layout pL-dashbord d-flex flex-column">
+  <header class="pL-header w-100 sticky-top">
+    {% block header %}
+      {% include "../regions/header.twig" %}
+    {% endblock %}
+  </header>
+
+  <div class="d-flex flex-grow-1">
+    <section class="pL-sidebar p-4 sticky-top overflow-auto">
+      {% block sidebar %}
+        {% include "../regions/sidebar.twig" %}
+      {% endblock %}
+    </section>
+
+    <main class="pL-main flex-grow-1 p-4 border-left">
+      {% if block('title') is defined %}
+        <div class="pl-main-head border-radius pb-3 mb-3">
+          <h1>{% block title %}{% endblock %}</h1>
+          <div class="lead">{% block description %}{% endblock %}</div>
+        </div>
+      {% endif %}
+
+      {% block main %}{% endblock %}
+    </main>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% set fileTitle = 'index' %}
+{% extends "../components/layout/layout.twig" %}
+{% block pTitle %}{{ tTitle }} Theme Sneppets{% endblock %}
+
+{% block header %}
+  {% include "../components/regions/header.twig" %}
+{% endblock %}
+
+{% block sidebar %}
+  {% include "../components/nav/nav-snippets.twig" %}
+{% endblock %}
+
+{% block main %}
+  <div class="d-flex flex-column justify-content-center h-100 align-items-center text-center w-75 mx-auto">
+    <img class="w-75" src="../assets/snippets.svg" />
+
+    <div class="mt-5">
+      <h1>Let's start building</h1>
+      <p>Snippets - is a collection of elements and combined components that you will find on live pages. Move quickly with copy-to-clipboard feature and build everything from a prototype to a fully designed website.</p>
+    </div>
+  </div>
+
+  <div>
+    <pre><code class="language-css">p { color: red }</code></pre>
+  </div>
+{% endblock %}
+
