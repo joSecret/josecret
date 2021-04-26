@@ -1,0 +1,30 @@
+{%- set headings_code -%}
+<h1>H1 Heading</h1>
+<h2>H2 Heading</h2>
+<h3>H3 Heading</h3>
+<h4>H4 Heading</h4>
+<h5>H5 Heading</h5>
+<h6>H6 Heading</h6>
+{%- endset -%}
+
+{% set headings_tabs = [
+  {
+    'name': 'Preview',
+    'classes': ' p-4',
+    'value': headings_code,
+  },
+  {
+    'name': 'HTML',
+    'value': '<pre class="language-markup"><code>' ~ headings_code|escape('html') ~ '</code></pre>',
+  }
+] %}
+
+{% set bColorDescription %}
+  {% include "../../components/default/code-tabs.twig" with { id: 'headings_tabs', items: headings_tabs} %}
+{% endset %}
+
+{% include "../../components/default/block-docs.twig" with {
+  bTitle: 'Headings',
+  bDescription: "All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.",
+  bBody: bColorDescription
+} %}

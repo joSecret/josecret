@@ -1,0 +1,14 @@
+@import "../../../../scss/import";
+
+.page-layout {
+  height: 100vh;
+}
+
+.pL-header {
+  height: 100vh;
+  min-width: 450px;
+}
+
+.pL-main {
+  @include padding(6.5rem 0);
+}

@@ -61,6 +61,19 @@ function css() {
     .pipe(browsersync.stream())
 }
 
+function cssComponents() {
+  return gulp
+    .src(sourcePath + 'twig/components/**/*.scss')
+    .on('error', catchErr)
+    .pipe(sourcemaps.init())
+    .pipe(plumber())
+    .pipe(sass({ outputStyle: 'expanded' }, {errLogToConsole: true}))
+    .on('error', catchErr)
+    .pipe(postcss([autoprefixer]))
+    .pipe(gulp.dest(distPath + 'css/components'))
+    .pipe(browsersync.stream())
+}
+
 function cssMin() {
   return gulp
     .src(sourcePath + 'scss/**/*.scss')
@@ -105,6 +118,7 @@ function imageMin() {
 // Watch files!
 function watchFilesHtml() {
   gulp.watch(sourcePath + 'scss/**/*', css);
+  gulp.watch(sourcePath + 'twig/components/**/*.scss', cssComponents);
   gulp.watch(sourcePath + 'js/**/*', scripts);
   gulp.watch(sourcePath + 'twig/**/*.twig', twigHtml);
 }

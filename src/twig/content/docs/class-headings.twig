@@ -1,0 +1,29 @@
+{%- set class_headdings -%}
+<p class="h1">h1. Bootstrap heading</p>
+<p class="h2">h2. Bootstrap heading</p>
+<p class="h3">h3. Bootstrap heading</p>
+<p class="h4">h4. Bootstrap heading</p>
+<p class="h5">h5. Bootstrap heading</p>
+<p class="h6">h6. Bootstrap heading</p>
+{%- endset -%}
+
+{% set class_headdings_tabs = [
+  {
+    'name': 'Preview',
+    'classes': ' p-4',
+    'value': class_headdings,
+  },
+  {
+    'name': 'HTML',
+    'value': '<pre class="language-markup"><code>' ~ class_headdings|escape('html') ~ '</code></pre>',
+  }
+] %}
+
+{% set bColorDescription %}
+  {% include "../../components/default/code-tabs.twig" with { id: 'class_headdings', items: class_headdings_tabs } %}
+{% endset %}
+
+{% include "../../components/default/block-docs.twig" with {
+  bDescription: "<code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.",
+  bBody: bColorDescription
+} %}

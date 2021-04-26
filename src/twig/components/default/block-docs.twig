@@ -1,0 +1,25 @@
+{% if bTitle is defined %}
+  {% set id = bTitle|lower|replace({' ' : '-'}) %}
+{% endif %}
+
+<div id="{{ id }}" class="block block-docs mb-4">
+  {% if bTitle is defined %}
+    <h3 class="docs-heading mb-3">
+      {{- bTitle -}}
+      <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#{{ id }}">#</a>
+    </h3>
+  {% endif %}
+
+  {% if bDescription is defined %}
+    <div class="block--description mb-3">
+      {{- bDescription -}}
+    </div>
+  {% endif %}
+
+  {% if bBody is defined %}
+    <div class="block--body">
+      {{- bBody -}}
+    </div>
+  {% endif %}
+</div>
+{# include "../default/block.twig" with { bTitle: 'title', bDescription: "description", bBody: 'body' } #}

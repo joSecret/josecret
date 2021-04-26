@@ -1,26 +1,13 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
   <div class="container-fluid pl-0">
-    <a class="navbar-brand px-4" href="#"><img src="../assets/logo.svg" /></a>
+    <a class="navbar-brand px-4" href="/"><img src="../assets/logo.svg" /></a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainsidebar" aria-controls="mainsidebar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="mainsidebar">
-      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          {% include "../default/link.twig" with { lClass: 'nav-link', lLabel: 'Documentation' } %}
-        </li>
-        <li class="nav-item">
-          {% include "../default/link.twig" with { lClass: 'nav-link', lActive: TRUE, lLabel: 'Snippets'} %}
-        </li>
-        <li class="nav-item">
-          {% include "../default/link.twig" with { lClass: 'nav-link', lLabel: 'Main Demo'} %}
-        </li>
-        <li class="nav-item">
-          {% include "../default/link.twig" with { lClass: 'nav-link', lLabel: 'Get Support'} %}
-        </li>
-      </ul>
+      {% include "../../content/navigations/nav-header.twig" %}
 
       <form class="d-inline-flex">
         <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">

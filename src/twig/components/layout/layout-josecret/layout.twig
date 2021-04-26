@@ -1,0 +1,26 @@
+{% extends "../html.twig" %}
+
+{% block style -%}
+  <link rel="stylesheet" href="./dist/css/style/josecret/style.css">
+  <link rel="stylesheet" href="./dist/css/components/layout/layout-josecret/layout-style.css">
+{%- endblock %}
+
+{% block body %}
+  <div class="page-layout d-flex flex-row ">
+    {% if block('header') %}
+      <header class="pL-header sticky-top d-flex align-items-center justify-content-center bg-white">
+        {%- block header %}{% endblock -%}
+      </header>
+    {% endif %}
+
+    <main class="pL-main d-flex flex-grow-1 border-start">
+      <div class="container d-flex align-items-center justify-content-lg-stretch">
+        {% if block('t') %}
+          <div class="page-tag text-uppercase">{% block title %}{% endblock %}</div>
+        {% endif %}
+
+        {% block main %}{% endblock %}
+      </div>
+    </main>
+  </div>
+{% endblock %}

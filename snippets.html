@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JoSecret.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/style.css">
+    <script src="./dist/js/bootstrap/bootstrap.min-min.js"></script>
+    <script src="./dist/js/prism-min.js"></script>
+    <link rel="stylesheet" href="./dist/css/components/layout/layout-sidebar/layout-style.css">    <title>Snippets</title>
+  </head>
+
+  <body>
+      <div class="page-layout pL-dashbord d-flex flex-column">
+    <header class="pL-header w-100 sticky-top"><nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+  <div class="container-fluid pl-0">
+    <a class="navbar-brand px-4" href="/"><img src="../assets/logo.svg" /></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainsidebar" aria-controls="mainsidebar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainsidebar">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+  <li class="nav-item">
+    
+<a class="nav-link" href="styleguide.html">Style Guide</a>
+  </li>
+
+  <li class="nav-item">
+    
+<a class="nav-link active" href="snippets.html">Snippets</a>
+  </li>
+
+  <li class="nav-item">
+    
+<a class="nav-link" href="#">Main Demo</a>
+  </li>
+
+  <li class="nav-item">
+    
+<a class="nav-link" href="#">Get Support</a>
+  </li>
+</ul>
+
+      <form class="d-inline-flex">
+        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+</header>
+
+    <div class="d-flex flex-grow-1">
+      <section class="pL-sidebar p-4 sticky-top overflow-auto border-end">Sidebar
+</section>
+
+      <main class="pL-main flex-grow-1 p-4">
+                  <div class="pl-main-head border-bottom pb-4 mb-4">
+            <h1>Snippets</h1>
+            <div class="lead">Base theme for twig + bootstrap 5</div>
+          </div>
+        
+          
+
+  
+<div id="headings" class="block block-docs mb-4">    <h3 class="docs-heading mb-3">Headings<a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#headings">#</a>
+    </h3>
+      <div class="block--description mb-3">All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, are available.</div>
+      <div class="block--body">  
+<div class="card card-tabs">
+  <ul
+    class="nav"
+    id="headings_tabs"
+    role="tablist"
+  >      <li class="nav-item"
+        role="presentation"
+      >
+        <a
+          href="#"
+          class="nav-link active"
+          id="pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#headings_tabs--1"
+          type="button"
+          role="tab"
+          aria-controls="headings_tabs--1"
+          aria-selected="true"
+        >Preview</a>
+      </li>
+          <li class="nav-item"
+        role="presentation"
+      >
+        <a
+          href="#"
+          class="nav-link"
+          id="pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#headings_tabs--2"
+          type="button"
+          role="tab"
+          aria-controls="headings_tabs--2"
+          aria-selected="false"
+        >HTML</a>
+      </li>
+      </ul>
+
+  <div class="tab-content" id="headings_tabs-tabContent">      <div
+        id="headings_tabs--1"
+        class="tab-pane fade show active p-4"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      ><h1>H1 Heading</h1>
+<h2>H2 Heading</h2>
+<h3>H3 Heading</h3>
+<h4>H4 Heading</h4>
+<h5>H5 Heading</h5>
+<h6>H6 Heading</h6></div>
+          <div
+        id="headings_tabs--2"
+        class="tab-pane fade"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      ><pre class="language-markup"><code>&lt;h1&gt;H1 Heading&lt;/h1&gt;
+&lt;h2&gt;H2 Heading&lt;/h2&gt;
+&lt;h3&gt;H3 Heading&lt;/h3&gt;
+&lt;h4&gt;H4 Heading&lt;/h4&gt;
+&lt;h5&gt;H5 Heading&lt;/h5&gt;
+&lt;h6&gt;H6 Heading&lt;/h6&gt;</code></pre></div>
+      </div>
+</div>
+</div>
+  </div>
+
+  
+
+
+<div id="" class="block block-docs mb-4">    <div class="block--description mb-3"><code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML element.</div>
+      <div class="block--body">  
+<div class="card card-tabs">
+  <ul
+    class="nav"
+    id="class_headdings"
+    role="tablist"
+  >      <li class="nav-item"
+        role="presentation"
+      >
+        <a
+          href="#"
+          class="nav-link active"
+          id="pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#class_headdings--1"
+          type="button"
+          role="tab"
+          aria-controls="class_headdings--1"
+          aria-selected="true"
+        >Preview</a>
+      </li>
+          <li class="nav-item"
+        role="presentation"
+      >
+        <a
+          href="#"
+          class="nav-link"
+          id="pills-home-tab"
+          data-bs-toggle="pill"
+          data-bs-target="#class_headdings--2"
+          type="button"
+          role="tab"
+          aria-controls="class_headdings--2"
+          aria-selected="false"
+        >HTML</a>
+      </li>
+      </ul>
+
+  <div class="tab-content" id="class_headdings-tabContent">      <div
+        id="class_headdings--1"
+        class="tab-pane fade show active p-4"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      ><p class="h1">h1. Bootstrap heading</p>
+<p class="h2">h2. Bootstrap heading</p>
+<p class="h3">h3. Bootstrap heading</p>
+<p class="h4">h4. Bootstrap heading</p>
+<p class="h5">h5. Bootstrap heading</p>
+<p class="h6">h6. Bootstrap heading</p></div>
+          <div
+        id="class_headdings--2"
+        class="tab-pane fade"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      ><pre class="language-markup"><code>&lt;p class=&quot;h1&quot;&gt;h1. Bootstrap heading&lt;/p&gt;
+&lt;p class=&quot;h2&quot;&gt;h2. Bootstrap heading&lt;/p&gt;
+&lt;p class=&quot;h3&quot;&gt;h3. Bootstrap heading&lt;/p&gt;
+&lt;p class=&quot;h4&quot;&gt;h4. Bootstrap heading&lt;/p&gt;
+&lt;p class=&quot;h5&quot;&gt;h5. Bootstrap heading&lt;/p&gt;
+&lt;p class=&quot;h6&quot;&gt;h6. Bootstrap heading&lt;/p&gt;</code></pre></div>
+      </div>
+</div>
+</div>
+  </div>
+
+      </main>
+    </div>
+  </div>
+
+    <div class="fz-6 badge rounded-pill bg-primary position-fixed end-0 bottom-0"> 
+      <span class="d-block d-sm-none">XS</span>
+      <span class="d-none d-sm-block d-md-none">SM</span>
+      <span class="d-none d-md-block d-lg-none">MD</span>
+      <span class="d-none d-lg-block d-xl-none">LG</span>
+      <span class="d-none d-xl-block d-xxl-none">XL</span>
+      <span class="d-none d-xxl-block">XXL</span>
+    </div>
+  </body>
+</html>

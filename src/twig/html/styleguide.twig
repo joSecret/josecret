@@ -1,0 +1,12 @@
+{% set path = 'styleguide.html' %}
+
+{% extends "../components/layout/layout-sidebar/layout.twig" %}
+
+{% block pTitle "Style Guide" %}
+{% block title "Style Guide" -%}
+{% block description "Base theme for twig + bootstrap 5" %}
+
+{% block main %}
+  {% include "../content/docs/headings.twig" %}
+  {% include "../content/docs/class-headings.twig" %}
+{% endblock %}

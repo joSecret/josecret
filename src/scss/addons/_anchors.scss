@@ -1,0 +1,18 @@
+.docs-heading::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 84px ;
+  visibility: hidden;
+  margin-top: -84px;
+}
+
+.anchorjs-link {
+  opacity: 0;
+  text-decoration: none;
+}
+
+:hover > .anchorjs-link,
+.anchorjs-link:focus {
+  opacity: 1;
+}

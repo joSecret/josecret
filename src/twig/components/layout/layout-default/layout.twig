@@ -1,0 +1,28 @@
+{% extends "../html.twig" %}
+
+{% block style -%}
+  <link rel="stylesheet" href="./dist/css/components/layout/layout-default/layout-style.css">
+{%- endblock %}
+
+{% block body %}
+  <div class="page-layout pL-default d-flex flex-column">
+    <header class="pL-header w-100 sticky-top">
+      {%- block header -%}
+        {%- include "../../regions/header.twig" -%}
+      {%- endblock -%}
+    </header>
+
+    <div class="d-flex flex-grow-1">
+      <main class="pL-main flex-grow-1 p-4">
+        {% if block('title') is defined %}
+          <div class="pl-main-head border-bottom pb-4 mb-4">
+            <h1>{% block title %}{% endblock %}</h1>
+            <div class="lead">{% block description %}{% endblock %}</div>
+          </div>
+        {% endif %}
+
+        {% block main %}{% endblock %}
+      </main>
+    </div>
+  </div>
+{% endblock %}
