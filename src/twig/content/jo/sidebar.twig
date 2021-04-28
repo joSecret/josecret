@@ -1,0 +1,33 @@
+{% set classes = [
+  "navbar",
+  "h-100",
+  "navbar-expand-xl",
+  "navbar-light",
+  "flex-grow-1",
+  "d-flex",
+  "justify-content-end",
+  "align-items-xl-center",
+  "justify-content-xl-center",
+  "flex-direction-xl-column",
+  "text-center"
+] %}
+
+<div class="sidebar h-100 d-flex flex-xl-column align-items-xl-center justify-content-xl-center">
+  <div class="wrapper-logo">
+    <a class="navbar-brand" href="./">
+      <img src="../../../../assets/logo.svg" />
+    </a>
+  </div>
+
+  <nav class="{{- classes|join(' ') -}}">
+    <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#joNavMain" aria-controls="joNavMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse d-flex flex-column" id="joNavMain">
+      {%- include "nav-main.twig" -%}
+
+      <div class="wrapper-copyright fs-6">© {{ "now"|date("Y") }}. Created with ♥ by <a class="link-secondary" href="josecret.com">JoSecret</a></div>
+    </div>
+  <nav>
+</div>

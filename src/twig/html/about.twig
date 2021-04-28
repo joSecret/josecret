@@ -1,14 +1,13 @@
 {% extends "../components/layout/layout-josecret/layout.twig" %}
-{% set path = './' %}
+{% set path = './about.html' %}
 
-{% block pTitle "JoSecret" %}
-{% block title "JoSecret" -%}
-{% block description "About Me" %}
+{% block pTitle "JoSecret | About" %}
+{% block title "About" -%}
 
 {%- block header -%}
   {% include "../content/jo/sidebar.twig" %}
 {%- endblock -%}
 
 {% block main %}
-  {% include "../content/jo/block-home.twig" %}
+  {% include "../content/jo/block-about.twig" %}
 {% endblock %}

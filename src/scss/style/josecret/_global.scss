@@ -7,6 +7,13 @@
   @include margin-bottom(2em);
 }
 
+.block--about {
+  .d-inline-block {
+    margin-bottom: 0;
+    min-width: 96px;
+  }
+}
+
 .animation-avatar {
   overflow: hidden;
   background-repeat: no-repeat;
@@ -32,6 +39,73 @@
  56% { border-radius: 61% 39% 67% 33% / 70% 50% 50% 30%; } 
  70% { border-radius: 50% 50% 34% 66% / 56% 68% 32% 44%; } 
  84% { border-radius: 46% 54% 50% 50% / 35% 61% 39% 65%; } 
+}
+
+.wrapper-copyright {
+  a {
+    color: $body-color;
+    transition: letter-spacing .2s ease-in-out;
+
+    &:hover {
+      letter-spacing: .15em;
+    }
+  }
+}
+
+// Nav
+.nav-main {
+  .nav-link {
+    color: $body-color;
+    font-weight: 500;
+    font-size: 1.125rem;
+    transition: letter-spacing .2s ease-in-out;
+
+    &:hover {
+      letter-spacing: .15em;
+    }
+  }
+}
+
+// Nav
+.navbar-toggler {
+  z-index: 1;
+}
+
+#joNavMain {
+  height: 100vh;
+  transition: opacity ease-in-out .3s;
+
+  @include media-breakpoint-down(xl) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($white, .95);
+
+    opacity: 0;
+    visibility: hidden;
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 100%;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .wrrapeer-address {
+    display: flex;
+    flex-wrap: wrap;
+
+    .address {
+      width: 50%;
+    }
+  }
 }
 
 // Blocks

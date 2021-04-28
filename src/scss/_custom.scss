@@ -22,6 +22,8 @@ $green:   #198754 !default;
 $teal:    #20c997 !default;
 $cyan:    #0dcaf0 !default;
 
+$secondary:     $gray-700;
+
 // Grid breakpoints
 $container-max-widths: (
   sm: 540px,
@@ -37,15 +39,42 @@ $border-color:              $gray-200;
 $body-bg:                   $gray-100;
 $body-color:                $gray-600;
 
+$link-decoration:           none;
+
 // Typography
 $font-family-sans-serif-heading: 'Fira+Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-base-heading:    var(--bs-font-sans-serif-heading);
 
-$font-size-base:              1rem;
+$font-size-root:              1rem;
+$font-size-base:              1.125rem;
+$font-size-sm:                $font-size-root * .875 !default;
+$font-size-lg:                $font-size-root * 1.25 !default;
 
-$h1-font-size:                $font-size-base * 3.2;
+$line-height-base:            2;
 
+$h1-font-size:                $font-size-root * 3.2;
+$h2-font-size:                $font-size-root * 2 !default;
+$h3-font-size:                $font-size-root * 1.75 !default;
+$h4-font-size:                $font-size-root * 1.5 !default;
+$h5-font-size:                $font-size-root * 1.25 !default;
+$h6-font-size:                $font-size-root !default;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $font-size-sm
+) !default;
+
+$headings-line-height:        $line-height-base;
 $headings-font-weight:        700;
 $headings-color:              $gray-800;
+
+// Navbar
+$navbar-padding-y:                  0;
+$navbar-padding-x:                  null !default;
+
 
 @import "../../node_modules/bootstrap/scss/variables";

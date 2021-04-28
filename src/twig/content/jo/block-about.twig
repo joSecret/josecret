@@ -1,0 +1,49 @@
+{% set birthday = "08.10.1983" %}
+{% set age = date("now")|date("Y") - date(birthday)|date("Y") %}
+
+{% set address_list = [
+  {
+    'label': 'Birthday:',
+    'value': birthday
+  }, {
+    'label': 'Age:',
+    'value': age
+  }, {
+    'label': 'Country:',
+    'value': 'Moldova'
+  }, {
+    'label': 'Email:',
+    'value': '<a class="link-secondary" href="mailto:admin@josecret.com">admin@josecret.com</a>'
+  }, {
+    'label': 'Phone:',
+    'value': '+373 689 22220'
+  }, {
+    'label': 'Freelance:',
+    'value': 'Available'
+  }
+] %}
+
+<div class="block block--about">
+  <div class="block-content row">
+    <div class="col-12">
+      <h3>Ion Obreja Front-end Drupal developr</h3>
+    </div>
+
+    <div class="col-lg-7">
+      <div class="mb-3">Innovative Front End Developer with more than {{ experience_web }} years of experience building and maintaining responsive websites. Proficient in HTML, CSS, SASS, JavaScript, plus modern libraries and frameworks like Boostrap, JQueary, React. Passionate about usability and possess working knowledge of Adobe apps mostly Adobe XD and of course Drupal knowing it for more than {{ experience_drupal }} years.</div>
+    </div>
+
+    <div class="col-lg-5 d-flex justify-content-lg-center">
+      <div class="wrrapeer-address">
+        {%- for item in address_list %}
+          <div class="address d-flex">
+            <h6 class="d-inline-block">
+              {{- item.label -}}
+            </h6>
+            {{- item.value -}}
+          </div>
+        {% endfor -%}
+      </div>
+    </div>
+  </div>
+</div>

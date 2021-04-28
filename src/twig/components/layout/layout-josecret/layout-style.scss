@@ -5,10 +5,12 @@
 }
 
 .pL-header {
-  height: 100vh;
-  min-width: 450px;
+  @include media-breakpoint-up(xl) {
+    width: 40vw;
+    max-width: 450px;
+  }
 }
 
 .pL-main {
-  @include padding(6.5rem 0);
+  @include padding(6.5rem 3.5rem);
 }

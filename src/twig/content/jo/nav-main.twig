@@ -1,0 +1,17 @@
+{% set lists = [
+  {
+    'href': './',
+    'label': 'Home'
+  }, {
+    'href': './about.html',
+    'label': 'About'
+  }
+] %}
+
+<ul class="nav nav-main navbar-nav flex-column list-unstyled my-5 w-100 flex-grow-1 justify-content-center">
+  {% for item in lists %}
+    <li class="nav-item">
+      {% include "../../components/default/link.twig" with { lClass: "nav-link w-100", lHref: item.href, lLabel: item.label } %}
+    </li>
+  {% endfor %}
+</ul>
