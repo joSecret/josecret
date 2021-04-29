@@ -1,3 +1,7 @@
+{% block style -%}
+  <link rel="stylesheet" href="./dist/css/addons/hamburgers.css">
+{%- endblock %}
+
 {% set classes = [
   "navbar",
   "h-100",
@@ -20,8 +24,10 @@
   </div>
 
   <nav class="{{- classes|join(' ') -}}">
-    <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#joNavMain" aria-controls="joNavMain" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler hamburger hamburger--squeeze ml-auto collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#joNavMain" aria-controls="joNavMain" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
+      </div>
     </button>
 
     <div class="collapse navbar-collapse d-flex flex-column" id="joNavMain">

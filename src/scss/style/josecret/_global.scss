@@ -76,15 +76,24 @@
   transition: opacity ease-in-out .3s;
 
   @include media-breakpoint-down(xl) {
+    color: $white;
+
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba($white, .95);
-
+    background: rgba($secondary, .98);
     opacity: 0;
     visibility: hidden;
+
+    a {
+      color: $white;
+
+      &.active {
+        color: rgba($white, .5);
+      }
+    }
 
     &.show {
       opacity: 1;

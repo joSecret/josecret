@@ -16,7 +16,8 @@
 
   <body>
       <div class="page-layout d-flex flex-column flex-xl-row">
-          <header class="pL-header sticky-top bg-white p-3">
+          <header class="pL-header sticky-top bg-white p-3"><link rel="stylesheet" href="./dist/css/addons/hamburgers.css">
+
 <div class="sidebar h-100 d-flex flex-xl-column align-items-xl-center justify-content-xl-center">
   <div class="wrapper-logo">
     <a class="navbar-brand" href="./">
@@ -25,8 +26,10 @@
   </div>
 
   <nav class="navbar h-100 navbar-expand-xl navbar-light flex-grow-1 d-flex justify-content-end align-items-xl-center justify-content-xl-center flex-direction-xl-column text-center">
-    <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#joNavMain" aria-controls="joNavMain" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler hamburger hamburger--squeeze ml-auto collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#joNavMain" aria-controls="joNavMain" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
+      </div>
     </button>
 
     <div class="collapse navbar-collapse d-flex flex-column" id="joNavMain">

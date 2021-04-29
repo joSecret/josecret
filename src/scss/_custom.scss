@@ -76,5 +76,8 @@ $headings-color:              $gray-800;
 $navbar-padding-y:                  0;
 $navbar-padding-x:                  null !default;
 
+$navbar-toggler-focus-width:        0;
+$navbar-toggler-transition:         none;
+
 
 @import "../../node_modules/bootstrap/scss/variables";
