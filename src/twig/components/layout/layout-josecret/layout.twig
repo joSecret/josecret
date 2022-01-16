@@ -8,12 +8,12 @@
 {% block body %}
   <div class="page-layout d-flex flex-column flex-xl-row">
     {% if block('header') %}
-      <header class="pL-header sticky-top bg-white p-3">
+      <header class="age-layout--header sticky-top bg-white p-3">
         {%- block header %}{% endblock -%}
       </header>
     {% endif %}
 
-    <main class="pL-main d-flex flex-grow-1 border-start d-flex align-items-center">
+    <main class="age-layout--main d-flex flex-grow-1 border-start d-flex align-items-center">
       <div class="container">
         {% block main %}{% endblock %}
       </div>

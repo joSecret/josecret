@@ -58,9 +58,11 @@
     color: $body-color;
     font-weight: 500;
     font-size: 1.125rem;
-    transition: letter-spacing .2s ease-in-out;
+    letter-spacing: .05em;
+    transition: letter-spacing .5s ease-in-out;
 
-    &:hover {
+    &:hover,
+    &.active {
       letter-spacing: .15em;
     }
   }
