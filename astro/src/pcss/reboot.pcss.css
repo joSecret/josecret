@@ -71,7 +71,7 @@ address {
 }
 
 dt {
-  font-weight: var(--dt-font-weight, 500);
+  font-weight: var(--dt-fw, 500);
 }
 
 dd {

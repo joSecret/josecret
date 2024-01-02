@@ -1,11 +1,13 @@
 :root {
   /* Font */
-  --ff: "Roboto", sans-serif;
+  --ff: "Raleway", sans-serif;
   --ff-code: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
   --fs-root: 1rem;
   --fs-base: 1rem;
   --fs-sm: 0.875em;
+
+  --fs-lead: calc(var(--fs-base) * 0.125);
 
   /* Font weight*/
   --fw-light: 300;
@@ -107,7 +109,7 @@
   --c-gray-700: #333;
   --c-gray-800: #151515;
   --c-gray-900: #212529;
-  --c-primary: #109d12;
+  --c-primary: #4135a1;
   --c-secondary: #dee2e6;
   --c-success: #198754;
   --c-warning: #ffc107;

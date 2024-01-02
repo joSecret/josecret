@@ -34,11 +34,8 @@
 }
 
 .lead {
-  --fs-lead: calc(var(--fs-base) * .125);
-  --lead-font-weight: 300;
-
   font-size: var(--fs-lead);
-  font-weight: var(--lead-font-weight);
+  font-weight: var(--lead-font-weight, 300);
 }
 
 /* Lists */
