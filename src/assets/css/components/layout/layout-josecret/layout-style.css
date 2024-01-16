@@ -1,0 +1,23 @@
+/*
+ * Main files for import
+ */
+.page-layout {
+  height: 100vh;
+}
+
+@media (min-width: 1200px) {
+  .pL-header {
+    width: 40vw;
+    max-width: 280px;
+  }
+}
+
+.pL-main {
+  padding: calc(1.775rem + 6.3vw) calc(1.475rem + 2.7vw);
+}
+
+@media (min-width: 1200px) {
+  .pL-main {
+    padding: 6.5rem 3.5rem;
+  }
+}

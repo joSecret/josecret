@@ -1,0 +1,18 @@
+.wrap-body {
+  min-height: 100vh;
+}
+
+.pL-dashbord .navbar-brand,
+.pL-dashbord .pL-sidebar {
+  max-width: 230px;
+  min-width: 230px;
+}
+
+.pL-dashbord .pL-header {
+  max-height: 60px;
+}
+
+.pL-dashbord .pL-sidebar {
+  top: 60px;
+  height: calc(100vh - 60px);
+}
