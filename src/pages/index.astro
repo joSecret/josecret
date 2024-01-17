@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets";
+import logo from "../assets/img/logo.svg";
+
 import "../assets/css/style.css";
 import "../assets/css/style/josecret/style.css";
 import "../assets/css/components/layout/layout-josecret/layout-style.css";
@@ -57,7 +60,7 @@ import "../assets/css/components/layout/layout-josecret/layout-style.css";
         >
           <div class="wrapper-logo">
             <a class="navbar-brand" href="./">
-              <img src="src/assets/img/logo.svg" />
+              <Image src={logo} alt="JoSecret Logo" width={108} height={26} />
             </a>
           </div>
 
