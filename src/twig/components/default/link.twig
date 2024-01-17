@@ -1,9 +1,0 @@
-{% set classes = [
-  lClass,
-  fileTitle in lHref ? ' active' : null,
-  lHref == path ? ' active' : null,
-] %}
-
-<a class="{{- classes|join -}}" href="{{ lHref is defined ? lHref : '#' }}">
-  {{- lLabel -}}
-</a>{# include "../default/link.twig" with { lClass: 'nav-link', lActive: TRUE, lLabel: 'Documentation' } #}
