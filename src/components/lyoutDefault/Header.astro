@@ -1,8 +1,11 @@
 ---
 import HeaderLink from "../HeaderLink.astro";
+import { Image } from "astro:assets";
 import { SITE_TITLE } from "../../consts";
 
 import "../../assets/css/addons/hamburgers.css";
+
+import logo from "../../assets/img/logo.svg";
 ---
 
 <header class="page-layout--header border-end sticky-top bg-white p-3">
@@ -11,7 +14,7 @@ import "../../assets/css/addons/hamburgers.css";
   >
     <div class="wrapper-logo">
       <a class="navbar-brand" href="/">
-        <img src="src/assets/img/logo.svg" alt = {SITE_TITLE} />
+        <Image src={ logo } alt = {SITE_TITLE} />
       </a>
     </div>
 
