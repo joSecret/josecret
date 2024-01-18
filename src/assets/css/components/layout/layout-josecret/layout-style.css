@@ -2,7 +2,11 @@
  * Main files for import
  */
 .page-layout {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+.page-layout--header {
+  height: 100dvh;
 }
 
 @media (min-width: 1200px) {
