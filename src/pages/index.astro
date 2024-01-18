@@ -1,145 +1,31 @@
 ---
+import LayoutDefoult from "../layouts/default.astro";
 import { Image } from "astro:assets";
-import logo from "../assets/img/logo.svg";
 
-import "../assets/css/style.css";
-import "../assets/css/style/josecret/style.css";
-import "../assets/css/components/layout/layout-josecret/layout-style.css";
+import logo from "../assets/img/logo.svg";
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="JoSecret.com" />
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="src/assets/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="src/assets/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="src/assets/favicon/favicon-16x16.png"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
-      crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="src/assets/css/style/josecret/style.css" />
-    <title>JoSecret</title>
-  </head>
-
-  <body>
-    <div class="page-layout d-flex flex-column flex-xl-row">
-      <header class="age-layout--header sticky-top bg-white p-3">
-        <link rel="stylesheet" href="src/assets/css/addons/hamburgers.css" />
+<LayoutDefoult>
+  <div class="container">
+    <div class="block block--home row align-items-center">
+      <div class="field-image col-lg-4 col-xxl-3 mb-4 mb-md-5 mb-lg-0">
         <div
-          class="sidebar h-100 d-flex flex-xl-column align-items-xl-center justify-content-xl-center"
+          class="animation-avatar mx-auto"
+          style="background-image: url('./img/personal.jpg')"
+          class="img-fluid"
         >
-          <div class="wrapper-logo">
-            <a class="navbar-brand" href="./">
-              <Image src={logo} alt="JoSecret Logo" width={108} height={26} />
-            </a>
-          </div>
-
-          <nav
-            class="navbar h-100 navbar-expand-xl navbar-light flex-grow-1 d-flex justify-content-end align-items-xl-center justify-content-xl-center flex-direction-xl-column text-center"
-          >
-            <button
-              class="navbar-toggler hamburger hamburger--squeeze ml-auto collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#joNavMain"
-              aria-controls="joNavMain"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <div class="hamburger-box">
-                <div class="hamburger-inner"></div>
-              </div>
-            </button>
-
-            <div
-              class="collapse navbar-collapse d-flex flex-column"
-              id="joNavMain"
-            >
-              <ul
-                class="nav nav-main navbar-nav flex-column list-unstyled my-5 w-100 flex-grow-1 justify-content-center"
-              >
-                <li class="nav-item">
-                  <a class="nav-link w-100 active" href="/">Home</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link w-100" href="/about">About</a>
-                </li>
-              </ul>
-              <div class="wrapper-copyright fs-6">
-                © 2022. Created with ♥ by <a
-                  class="link-secondary"
-                  href="josecret.com">JoSecret</a
-                >
-              </div>
-            </div>
-          </nav>
         </div>
-      </header>
+      </div>
 
-      <main
-        class="age-layout--main d-flex flex-grow-1 border-start d-flex align-items-center"
-      >
-        <div class="container">
-          <div class="block block--home row align-items-center">
-            <div class="field-image col-lg-4 col-xxl-3 mb-4 mb-md-5 mb-lg-0">
-              <div
-                class="animation-avatar mx-auto"
-                style="background-image: url('./img/personal.jpg')"
-                class="img-fluid"
-              >
-              </div>
-            </div>
-
-            <div
-              class="block-content text-center text-lg-start col-lg-8 col-xxl-9"
-            >
-              <div class="padding-left">
-                <h1 class="text-uppercase mb-4">Ion Obreja</h1>
-                <div class="lead mb-3">
-                  I'm Front-end Drupal Developer from Moldova, Chisinau with
-                  Acquia certifications.
-                </div>
-              </div>
-            </div>
+      <div class="block-content text-center text-lg-start col-lg-8 col-xxl-9">
+        <div class="padding-left">
+          <h1 class="text-uppercase mb-4">Ion Obreja</h1>
+          <div class="lead mb-3">
+            I'm Front-end Acquia certifications Drupal Developer located in
+            Chisinau, Moldova.
           </div>
         </div>
-      </main>
+      </div>
     </div>
-
-    <div
-      class="fz-6 badge rounded-pill bg-primary position-fixed end-0 bottom-0"
-    >
-    </div>
-  </body>
-</html>
+  </div>
+</LayoutDefoult>

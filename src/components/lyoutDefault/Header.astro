@@ -1,0 +1,63 @@
+---
+import HeaderLink from "../HeaderLink.astro";
+import { SITE_TITLE } from "../../consts";
+
+import "../../assets/css/addons/hamburgers.css";
+---
+
+<header class="page-layout--header border-end sticky-top bg-white p-3">
+  <div
+    class="sidebar h-100 d-flex flex-xl-column align-items-xl-center justify-content-xl-center"
+  >
+    <div class="wrapper-logo">
+      <a class="navbar-brand" href="/">
+        <img src="src/assets/img/logo.svg" alt = {SITE_TITLE} />
+      </a>
+    </div>
+
+    <nav
+      class="navbar h-100 navbar-expand-xl navbar-light flex-grow-1 d-flex justify-content-end align-items-xl-center justify-content-xl-center flex-direction-xl-column text-center"
+    >
+      <button
+        class="navbar-toggler hamburger hamburger--squeeze ml-auto collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#joNavMain"
+        aria-controls="joNavMain"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </button>
+
+      <div
+        class="collapse navbar-collapse d-flex flex-column"
+        id="joNavMain"
+      >
+        <ul
+          class="nav nav-main navbar-nav flex-column list-unstyled my-5 w-100 flex-grow-1 justify-content-center"
+        >
+          <li class="nav-item">
+            <HeaderLink href="/">Home</HeaderLink>
+          </li>
+          <li class="nav-item">
+            <HeaderLink href="/about">About</HeaderLink>
+          </li>
+          <!-- <li class="nav-item">
+            <HeaderLink href="/blog">Blog</HeaderLink>
+          </li> -->
+        </ul>
+
+        <div class="wrapper-copyright fs-6">
+          © 2022. Created with ♥ by <a
+            class="link-secondary"
+            href="josecret.com">JoSecret</a
+          >
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+

@@ -1,0 +1,27 @@
+---
+import Html from "../components/system/html.astro";
+import Header from "../components/lyoutDefault/Header.astro";
+
+import "../assets/css/style.css";
+import "../assets/css/style/josecret/style.css";
+import "../assets/css/components/layout/layout-josecret/layout-style.css";
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<Html title={title} description={description}>
+  <div class="page-layout d-flex flex-column flex-xl-row">
+    <Header />
+
+    <main
+      class="page-layout--main d-flex flex-grow-1 d-flex align-items-center"
+    >
+      <slot />
+    </main>
+  </div>
+</Html>
+
+<script
+  is:inline
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+></script>
