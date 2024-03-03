@@ -5,11 +5,11 @@
   min-height: 100vh;
 }
 
-.page-layout--header {
-  height: 100dvh;
-}
-
 @media (min-width: 1200px) {
+  .page-layout--header {
+    height: 100dvh;
+  }
+
   .pL-header {
     width: 40vw;
     max-width: 280px;
