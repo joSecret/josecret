@@ -1,8 +1,4 @@
-#### Hey, I'm John!
-
-I don't know what to write here really,
-
-<h1 align="center">Hi there <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30">, I'm Ion Obreja</h1>
+## Hi there <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30">, I'm Ion Obreja
 
 - 👨‍💻  Frontend Developer
 - 🌍  I'm based in Moldova
