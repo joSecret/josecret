@@ -151,6 +151,71 @@ declare module 'astro:content' {
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
+"experience": {
+"01-freelancer.md": {
+	id: "01-freelancer.md";
+  slug: "01-freelancer";
+  body: string;
+  collection: "experience";
+  data: InferEntrySchema<"experience">
+} & { render(): Render[".md"] };
+"02-IuniePrim.md": {
+	id: "02-IuniePrim.md";
+  slug: "02-iunieprim";
+  body: string;
+  collection: "experience";
+  data: InferEntrySchema<"experience">
+} & { render(): Render[".md"] };
+"03-camlab.md": {
+	id: "03-camlab.md";
+  slug: "03-camlab";
+  body: string;
+  collection: "experience";
+  data: InferEntrySchema<"experience">
+} & { render(): Render[".md"] };
+"04-freelance.md": {
+	id: "04-freelance.md";
+  slug: "04-freelance";
+  body: string;
+  collection: "experience";
+  data: InferEntrySchema<"experience">
+} & { render(): Render[".md"] };
+"05-deeplace.md": {
+	id: "05-deeplace.md";
+  slug: "05-deeplace";
+  body: string;
+  collection: "experience";
+  data: InferEntrySchema<"experience">
+} & { render(): Render[".md"] };
+"06-softtehnica.md": {
+	id: "06-softtehnica.md";
+  slug: "06-softtehnica";
+  body: string;
+  collection: "experience";
+  data: InferEntrySchema<"experience">
+} & { render(): Render[".md"] };
+"07-insomniac.md": {
+	id: "07-insomniac.md";
+  slug: "07-insomniac";
+  body: string;
+  collection: "experience";
+  data: InferEntrySchema<"experience">
+} & { render(): Render[".md"] };
+"08-optasy.md": {
+	id: "08-optasy.md";
+  slug: "08-optasy";
+  body: string;
+  collection: "experience";
+  data: InferEntrySchema<"experience">
+} & { render(): Render[".md"] };
+"09-eau.md": {
+	id: "09-eau.md";
+  slug: "09-eau";
+  body: string;
+  collection: "experience";
+  data: InferEntrySchema<"experience">
+} & { render(): Render[".md"] };
+};
 
 	};
 

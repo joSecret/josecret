@@ -1,28 +1,46 @@
 ---
-import LayoutDefoult from '../layouts/default.astro';
+import Layout from "@/layouts/Layout.astro";
+
+import About from "@/components/sections/About.astro";
+import Education from "@/components/sections/Education.astro";
+import Experience from "@/components/sections/Experience.astro";
+import Hero from "@/components/sections/Hero.astro";
+// import Projects from "@/components/sections/Projects.astro";
+import Skills from "@/components/sections/Skills.astro";
+import Tail from "@/components/sections/Tail.astro";
+// import ThemeSwitch from "@/components/ThemeSwitch.astro";
+// import KeyboardManager from "@/components/KeyboardManager.astro";
+
+import { basics } from "@cv";
+const { name, label } = basics;
 ---
 
-<LayoutDefoult>
-  <div class='container'>
-    <div class='block block--home row align-items-center'>
-      <div class='field-image col-lg-4 col-xxl-3 mb-4 mb-md-5 mb-lg-0'>
-        <div
-          class='animation-avatar mx-auto'
-          style="background-image: url('./img/personal.jpg')"
-          class='img-fluid'
-        >
-        </div>
-      </div>
+<Layout title={`${name} Portafolio - ${label}`}>
+	<main class="relative grid max-w-7xl gap-12 p-8 max-sm:py-16 md:grid-cols-6 md:p-16 xl:gap-24 print:max-w-none print:grid-cols-1 print:gap-6">
+		<div class="space-y-6 md:col-span-2 print:col-span-1 print:grid print:grid-cols-2 print:gap-5 print:space-y-0">
+			<Hero />
+			<!-- <ThemeSwitch /> -->
+		</div>
+		<div class="space-y-12 md:col-span-4 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0">
+			<About />
+			<Experience className="print:col-span-3" />
+			<!-- <Projects className="print:hidden" /> -->
+			<Skills className="print:hidden" />
+			<Education className="order-first" />
+		</div>
+		<Tail />
+	</main>
 
-      <div class='block-content text-center text-lg-start col-lg-8 col-xxl-9'>
-        <div class='padding-left'>
-          <h1 class='text-uppercase mb-4'>Ion Obreja</h1>
-          <div class='lead mb-3'>
-            I'm Front-end Acquia certifications Drupal Developer located in
-            Chisinau, Moldova.
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</LayoutDefoult>
+	<!-- <KeyboardManager /> -->
+</Layout>
+
+<style>
+	@page {
+		size: auto;
+		margin: 0mm;
+	}
+	main {
+		margin: auto;
+		width: 100%;
+	}
+</style>

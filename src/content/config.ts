@@ -13,4 +13,14 @@ const blog = defineCollection({
 	}),
 });
 
-export const collections = { blog };
+const experience = defineCollection({
+  type: "content",
+  schema: z.object({
+    company: z.string(),
+    role: z.string(),
+    dateStart: z.coerce.date(),
+    dateEnd: z.union([z.coerce.date(), z.string()]),
+  }),
+});
+
+export const collections = { blog, experience };

@@ -1,0 +1,443 @@
+{
+  "basics": {
+    "name": "Ion Obreja",
+    "label": "I'm Front-end Drupal Developer.",
+    "image": "/img/personal.jpg",
+    "email": "admin@josecret.com",
+    "phone": "+373 68922220",
+    "url": "https://josecret.com",
+    "summary": "Innovative Front End Developer with more than years of experience building and maintaining responsive websites. Proficient in HTML, CSS, SASS, JavaScript, plus modern libraries and frameworks like Boostrap, JQueary, React. Passionate about usability and possess working knowledge of Adobe apps mostly Adobe XD and of course Drupal knowing it for more than years.",
+    "theme": "default",
+    "location": {
+      "address": "",
+      "postalCode": "MD-2092",
+      "city": "Chisinau",
+      "countryCode": "ch",
+      "region": "Moldova"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "ion-obreja",
+        "url": "https://www.linkedin.com/in/ion-obreja/"
+      },
+      {
+        "network": "GitHub",
+        "username": "joSecret",
+        "url": "https://github.com/joSecret"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "SELK",
+      "position": "Team-lead Senior Frontend Drupal Developer",
+      "location_type": "Hybrid",
+      "location": "Chisinau, Moldova",
+      "url": "https://www.selk.global/",
+      "startDate": "2022-05-01",
+      "endDate": null,
+      "skills": [
+        "Drupal",
+        "Post CSS",
+        "GitHub",
+        "Twig",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Eau de Web",
+      "position": "Senior Frontend Drupal Developer",
+      "location_type": "Full time",
+      "location": "Bucharest, Romania",
+      "url": "https://eaudeweb.ro/",
+      "startDate": "2021-10-01",
+      "endDate": null,
+      "summary": "Developing and maintaining web applications using Drupal, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
+      "highlights": [
+        "Improved website performance by optimizing code"
+      ],
+      "responsibilities": [
+        "Collaborated with senior developers to design and implement web applications using Drupal.",
+        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
+        "Participated in code reviews and contributed to improving coding standards within the team."
+      ],
+      "achievements": [
+        "Developing and maintaining web applications using Drupal, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
+      ],
+      "skills": [
+        "Drupal",
+        "Post CSS",
+        "GitHub",
+        "Twig",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Optasy",
+      "position": "Senior Frontend Drupal Developer",
+      "location_type": "Remote",
+      "location": "Toronto, Canada",
+      "url": "https://optasy.com/",
+      "startDate": "2020-02-01",
+      "endDate": "2022-02-01",
+      "skills": [
+        "Python",
+        "Django",
+        "SQL",
+        "Git"
+      ]
+    },
+    {
+      "name": "Insomiac Design & Brand Graphics",
+      "position": "Senior Frontend Drupal Developer",
+      "location_type": "Full time",
+      "location": "Chisinau, Moldova",
+      "url": "https://www.insomniacdesign.com/",
+      "startDate": "2017-12-01",
+      "endDate": "2020-02-01",
+      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
+      "highlights": [
+        "Completed several client projects successfully"
+      ],
+      "skills": [
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Soft Tehnica",
+      "position": "Senior Frontend Drupal Developer",
+      "location_type": "Full time",
+      "location": "Chisinau, Moldova",
+      "url": "https://soft-tehnica.com/ro/",
+      "startDate": "2017-12-01",
+      "endDate": "2020-02-01",
+      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
+      "highlights": [
+        "Completed several client projects successfully"
+      ],
+      "skills": [
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Deeplace",
+      "position": "Mid-Senior Frontend Drupal Developer",
+      "location_type": "Full time",
+      "location": "Chisinau, Moldova",
+      "url": "https://deeplace.md/",
+      "startDate": "2016-01-01",
+      "endDate": "2017-10-01",
+      "skills": [
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Freelance",
+      "position": "Frontend Drupal Developer",
+      "location_type": "Freelance",
+      "startDate": "2014-01-01",
+      "endDate": "2016-01-01",
+      "skills": [
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Camlab",
+      "position": "Frontend Drupal Developer",
+      "location_type": "Full time",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "skills": [
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "Iunie Prim",
+      "position": "Designer printing house",
+      "location_type": "Full time",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "skills": [
+        "Adobe",
+        "InDesign"
+      ]
+    },
+    {
+      "name": "Freelance",
+      "position": "Frontend Development & Design",
+      "location_type": "Freelance",
+      "startDate": "2008-01-01",
+      "endDate": "2012-01-01",
+      "summary": "working on www.farm.md(offline), www.constructii.md(offline)",
+      "skills": [
+        "HTML",
+        "CSS",
+        "PHP"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Local Coding Club",
+      "position": "Volunteer",
+      "url": "https://codingclub.com/",
+      "startDate": "2021-01-01",
+      "endDate": "2022-01-01",
+      "summary": "Helped organize coding workshops and mentored new members.",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universitatea de Stat din Moldova",
+      "url": "https://utm.md/",
+      "area": "Facultatea Urbanism si arhitectura",
+      "studyType": "arhitectura",
+      "startDate": "2006-06-01",
+      "endDate": "2002-09-01",
+      "score": "3.8",
+      "courses": [
+        "CS101 - Introduction to Computer Science"
+      ]
+    },
+    {
+      "institution": "Liceu",
+      "url": "",
+      "area": "Telecomunicatii",
+      "studyType": "Master",
+      "startDate": "1999-09-01",
+      "endDate": "2002-06-01",
+      "score": "8.7"
+    },
+    {
+      "institution": "Ion Creangă Theoretical Lyceum",
+      "area": "Falesti",
+      "endDate": "1999-06-01",
+      "startDate": "1994-10-01"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Front End Specialist - Drupal 8",
+      "date": "2020-10-23",
+      "issuer": "Acquia Certified",
+      "url": "https://dev.acquia.com/person/community/ion-obreja"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Drupal",
+      "level": "Expert",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Expert",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "Twig",
+      "level": "Expert",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Expert",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "PostCSS",
+      "level": "Expert",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "SASS",
+      "level": "Expert",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "level": "Expert",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "Gitlab",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Git"
+      ]
+    },
+    {
+      "name": "AdobeXD",
+      "level": "InterExpertmediate",
+      "keywords": [
+        "Design",
+        "UI"
+      ]
+    },
+    {
+      "name": "Figma",
+      "level": "Intermediate",
+      "keywords": [
+        "Design",
+        "UI"
+      ]
+    },
+    {
+      "name": "Astro.js",
+      "level": "Beginner",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "SSR",
+        "Static Generation"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Intermediate"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Technology",
+      "keywords": [
+        "AI",
+        "Blockchain"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Smith",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Personal Portfolio",
+      "isActive": false,
+      "description": "A personal portfolio website to showcase my projects and skills.",
+      "highlights": [
+        "Built with React and Tailwind CSS",
+        "Includes a blog and contact form"
+      ],
+      "url": "https://johndoe.dev",
+      "github": "https://github.com"
+    },
+    {
+      "name": "Weather App",
+      "isActive": true,
+      "description": "A web application that provides weather information for any location.",
+      "highlights": [
+        "Built with JavaScript and OpenWeatherMap API",
+        "Responsive design",
+        "Responsive design",
+        "Responsive design"
+      ],
+      "url": "https://weatherapp.com"
+    },
+    {
+      "name": "Task Manager",
+      "isActive": true,
+      "description": "A simple task management app to keep track of daily tasks.",
+      "highlights": [
+        "Built with Node.js and MongoDB",
+        "User authentication and CRUD operations"
+      ],
+      "url": "https://taskmanager.com",
+      "github": "https://github.com"
+    },
+    {
+      "name": "E-commerce Site",
+      "isActive": false,
+      "description": "An online store built with Next.js and Stripe for payment processing.",
+      "highlights": [
+        "Product management and shopping cart functionality",
+        "Secure payment integration"
+      ],
+      "url": "https://ecommerce.com"
+    }
+  ]
+}
