@@ -39,10 +39,13 @@
       "endDate": null,
       "skills": [
         "Drupal",
+        "HTML",
         "PostCSS",
-        "GitHub",
+        "CSS",
         "Twig",
-        "CSS"
+        "Javascript",
+        "Git",
+        "Astro.js"
       ]
     },
     {
@@ -67,10 +70,12 @@
       ],
       "skills": [
         "Drupal",
+        "HTML",
         "PostCSS",
-        "GitHub",
+        "CSS",
         "Twig",
-        "CSS"
+        "Javascript",
+        "Git"
       ]
     },
     {
@@ -82,9 +87,14 @@
       "startDate": "2020-02-01",
       "endDate": "2022-02-01",
       "skills": [
-        "Python",
-        "Django",
-        "SQL",
+        "Drupal",
+        "HTML",
+        "Bootstrap",
+        "PostCSS",
+        "SASS",
+        "CSS",
+        "Twig",
+        "Javascript",
         "Git"
       ]
     },
@@ -101,8 +111,14 @@
         "Completed several client projects successfully"
       ],
       "skills": [
+        "Drupal",
         "HTML",
-        "CSS"
+        "Bootstrap",
+        "SASS",
+        "CSS",
+        "Twig",
+        "Javascript",
+        "Git"
       ]
     },
     {
@@ -118,8 +134,13 @@
         "Completed several client projects successfully"
       ],
       "skills": [
+        "Drupal",
         "HTML",
-        "CSS"
+        "Bootstrap",
+        "SASS",
+        "CSS",
+        "Twig",
+        "Git"
       ]
     },
     {
@@ -131,8 +152,12 @@
       "startDate": "2016-01-01",
       "endDate": "2017-10-01",
       "skills": [
+        "Drupal",
         "HTML",
-        "CSS"
+        "Bootstrap",
+        "SASS",
+        "CSS",
+        "Git"
       ]
     },
     {
@@ -142,8 +167,13 @@
       "startDate": "2014-01-01",
       "endDate": "2016-01-01",
       "skills": [
+        "Drupal",
         "HTML",
-        "CSS"
+        "Bootstrap",
+        "SASS",
+        "CSS",
+        "PHP",
+        "Git"
       ]
     },
     {
@@ -153,8 +183,13 @@
       "startDate": "2013-01-01",
       "endDate": "2014-01-01",
       "skills": [
+        "Drupal",
         "HTML",
-        "CSS"
+        "Bootstrap",
+        "SASS",
+        "CSS",
+        "PHP",
+        "Git"
       ]
     },
     {
@@ -165,7 +200,10 @@
       "endDate": "2013-01-01",
       "skills": [
         "Adobe",
-        "InDesign"
+        "InDesign",
+        "Coral",
+        "Word",
+        "Excel"
       ]
     },
     {
