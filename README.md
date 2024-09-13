@@ -26,7 +26,8 @@
 </p>
 
 <h3 align="left">Others Links:</h3>
-<p align="left"> 
+<p align="left">
+<a href="https://www.drupal.org/u/jonsecret" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/drupal.svg" width="32" height="32" /></a>
 <a href="https://www.linkedin.com/in/ion-obreja" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
 <a href="https://github.com/joSecret" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a>
 <a href="https://josecret.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/hashnode.svg" width="32" height="32" /></a>
@@ -34,7 +35,7 @@
 
 <details>
   <summary>General Stats</summary>
-  
+
 <div style="display:flex;">
 <div>
 <a href="http://www.github.com/joSecret"><img src="https://github-readme-streak-stats.herokuapp.com/?user=joSecret&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>

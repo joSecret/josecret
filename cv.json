@@ -6,7 +6,7 @@
     "email": "admin@josecret.com",
     "phone": "+373 68922220",
     "url": "https://josecret.com",
-    "summary": "Innovative Front End Developer with more than years of experience building and maintaining responsive websites. Proficient in HTML, CSS, SASS, JavaScript, plus modern libraries and frameworks like Boostrap, JQueary, React. Passionate about usability and possess working knowledge of Adobe apps mostly Adobe XD and of course Drupal knowing it for more than years.",
+    "summary": "With over 15 years of experience in creating and maintaining responsive websites, I specialize in delivering user-friendly digital experiences. My expertise includes a strong proficiency in HTML, CSS, SASS, and JavaScript, as well as popular libraries and frameworks such as Bootstrap, jQuery, and React. I am passionate about usability and have a solid understanding of Adobe Creative Suite, particularly Adobe XD. Additionally, I am proficient in Figma, enabling me to design and prototype intuitive user interfaces effectively. I also have extensive knowledge of Drupal, having worked with the platform for over 14. I am dedicated to combining aesthetic design with functionality to enhance user engagement and satisfaction.",
     "theme": "default",
     "location": {
       "address": "",
@@ -16,6 +16,11 @@
       "region": "Moldova"
     },
     "profiles": [
+      {
+        "network": "drupal",
+        "username": "jonsecret",
+        "url": "https://www.drupal.org/u/jonsecret"
+      },
       {
         "network": "LinkedIn",
         "username": "ion-obreja",
