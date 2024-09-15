@@ -2,7 +2,6 @@
 company: "Eau de Web"
 role: "Senior Frontend Drupal Developer"
 dateStart: "08/01/2021"
-dateEnd: "Present"
 ---
 
 [Convention on Migratory Species](https://www.cms.int) Drupal 9 & Bootstrap 4, Design and theming.
