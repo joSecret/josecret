@@ -25,13 +25,7 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/markdown/markdown-original.svg" width="36" height="36" alt="MarkDown" />
 </p>
 
-<h3 align="left">Others Links:</h3>
-<p align="left">
-<a href="https://www.drupal.org/u/jonsecret" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/drupal.svg" width="32" height="32" /></a>
-<a href="https://www.linkedin.com/in/ion-obreja" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
-<a href="https://github.com/joSecret" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/github.svg" width="32" height="32" /></a>
-<a href="https://josecret.com" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/hashnode.svg" width="32" height="32" /></a>
-</p>
+![joSecret's Stats](https://github-readme-stats.vercel.app/api?username=joSecret&theme=tokyonight&show_icons=true&hide_border=true&count_private=true)
 
 <details>
   <summary>General Stats</summary>
