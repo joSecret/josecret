@@ -1,11 +1,16 @@
-import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
+// @ts-check
+import { defineConfig } from "astro/config";
+import tailwindcss from "@tailwindcss/vite";
 
-import sitemap from '@astrojs/sitemap';
-import tailwind from "@astrojs/tailwind";
+import react from "@astrojs/react";
+
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://josecret.com',
-  integrations: [tailwind(), mdx(), sitemap()],
+  site: 'https://josecret.com/',
+  integrations: [react(), mdx()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
