@@ -1,0 +1,62 @@
+---
+// components imports
+import { Button} from "./ui/button";
+import LinkedIn from "./icons/LinkedIn.astro";
+import DownloadArrow from "./icons/DownloadArrow.astro";
+
+// config import
+import { ME } from '@/config.ts';
+
+const resume = "/" + ME.contactInfo.resumeDoc;
+const {linkedin, email} = ME.contactInfo;
+---
+<div class="profile-action-buttons w-full flex gap-2">
+  <Button
+    data-cv={resume}
+    id="cvBtn"
+    size={'lg'}
+    className="[&_svg]:size-8 px-4 md:px-8 h-14 cv-btn flex-1 text-n700 bg-primary-light dark:bg-primary-dark hover:bg-primary-hover-light dark:hover:bg-primary-hover-dark">
+    Download CV
+    <DownloadArrow width={24} height={24}  />
+  </Button>
+
+  <a href={linkedin} target="_blank" aria-label="my linkedIn profile link" class="link">
+    <LinkedIn width={24} height={24} />
+  </a>
+
+  <a href={`mailto:${email}` } aria-label="send me an email" class="link">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="fill-n700 dark:fill-light-theme" ><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg>
+  </a>
+</div>
+
+<script>
+  const cvBtn = document.getElementById('cvBtn') as HTMLButtonElement;
+  const resume = cvBtn.dataset.cv;
+
+  cvBtn.addEventListener('click', () => {
+    window.open(resume, '_blank');
+  })
+</script>
+
+<style>
+  .link {
+    width: 56px;
+    aspect-ratio: 1;
+    transition: background-color 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgb(0 0 0 / var(--tw-bg-opacity));
+    border-radius: 6px;
+    align-content: center;
+    text-align: center;
+
+    &:hover {
+      background: rgb(23 31 38 / var(--tw-bg-opacity));
+    }
+
+    svg {
+      margin-inline: auto;
+      width: 32px;
+      height: auto;
+    }
+  }
+</style>
