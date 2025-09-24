@@ -4,6 +4,7 @@ import {getCollection} from "astro:content";
 
 // components imports
 import ProjectCard from "./ProjectCard.astro";
+import Link from "./Link.astro";
 import {buttonVariants} from "./ui/button";
 
 const allProjects = (await getCollection('projects'))
@@ -31,9 +32,9 @@ const allProjects = (await getCollection('projects'))
         </div>
     </section>
     <div class="flex justify-center mt-10">
-        <a href="/projects" class={buttonVariants({ variant: "default" }) + "text-n700 bg-primary-light dark:bg-primary-dark hover:bg-primary-hover-light dark:hover:bg-primary-hover-dark"}>
+        <Link href="/projects" class={buttonVariants({ variant: "default" }) + "text-n700 bg-primary-light dark:bg-primary-dark hover:bg-primary-hover-light dark:hover:bg-primary-hover-dark"}>
             See All Projects
-        </a>
+        </Link>
     </div>
 </>
 
