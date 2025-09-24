@@ -25,7 +25,7 @@ const {
     author = SITE.author,
     scrollSmooth,
     canonicalURL = new URL(Astro.url.pathname, Astro.site).href,
-    imageOg = SITE.ogImage,
+    imageOg = new URL(SITE.ogImage, Astro.site).href,
 } = Astro.props;
 ---
 
