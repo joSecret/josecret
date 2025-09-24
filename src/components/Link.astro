@@ -1,0 +1,25 @@
+---
+interface Props {
+  href: string;
+  class?: string;
+  "aria-label"?: string;
+  target?: string;
+  rel?: string;
+  [key: string]: any;
+}
+
+const { href, ...rest } = Astro.props as Props;
+
+// Check if it's an external link (starts with http, https, mailto, tel, etc.)
+const isExternal = href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel') || href.startsWith('#');
+
+// Get the base path from import.meta.env
+const base = import.meta.env.BASE_URL;
+
+// Add base path only to internal links
+const finalHref = isExternal ? href : `${base}${href.startsWith('/') ? href.slice(1) : href}`;
+---
+
+<a href={finalHref} {...rest}>
+  <slot />
+</a>

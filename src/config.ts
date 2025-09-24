@@ -3,7 +3,7 @@ export const SITE = {
     title: "JoSecret",
     description: "A portfolio and resume.",
     tags: ["portfolio", "Resume cv", "developer", "Drupal", "Frontend"],
-    ogImage: "/og-image.webp",
+    ogImage: "/og-img.png",
     logo: "logo",
     logoText: "JoSecret",
     lang: "en",

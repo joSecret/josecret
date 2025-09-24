@@ -8,14 +8,14 @@ import AboutMeCC from "../components/AboutMeCC.astro";
 import ProfileFacts from "../components/ProfileFacts.astro";
 ---
 
-<Layout title="JoSecret dot com | Portfolio" description="A simple portfolio created with Astro." scrollSmooth={false}>
-    <>
-        <ProfileInfo/>
-        <ProfileFacts/>
-        <ProfileActionButton/>
-        <TabsButtons client:idle>
-            <ProjectsCC slot="portfolio"/>
-            <AboutMeCC slot="about"/>
-        </TabsButtons>
-    </>
+<Layout title="JoSecret dot com | Portfolio" description="Frontend Drupal Developer with 15+ years of experience. Specialized in clean, functional interfaces using modular CSS, PostCSS and modern development practices." scrollSmooth={false}>
+  <>
+    <ProfileInfo/>
+    <ProfileFacts/>
+    <ProfileActionButton/>
+    <TabsButtons client:idle>
+      <ProjectsCC slot="portfolio"/>
+      <AboutMeCC slot="about"/>
+    </TabsButtons>
+  </>
 </Layout>
