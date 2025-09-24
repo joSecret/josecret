@@ -1,46 +1,21 @@
 ---
-import Layout from "@/layouts/Layout.astro";
-
-import About from "@/components/sections/About.astro";
-import Education from "@/components/sections/Education.astro";
-import Experience from "@/components/sections/Experience.astro";
-import Hero from "@/components/sections/Hero.astro";
-// import Projects from "@/components/sections/Projects.astro";
-import Skills from "@/components/sections/Skills.astro";
-import Tail from "@/components/sections/Tail.astro";
-// import ThemeSwitch from "@/components/ThemeSwitch.astro";
-// import KeyboardManager from "@/components/KeyboardManager.astro";
-
-import { basics } from "@cv";
-const { name, label } = basics;
+import Layout from '../layouts/Layout.astro';
+import ProfileInfo from "../components/ProfileInfo.astro";
+import ProfileActionButton from "../components/ProfileActionButton.astro";
+import TabsButtons from "../components/TabsButtons.tsx";
+import ProjectsCC from '@/components/ProjectsCC.astro';
+import AboutMeCC from "../components/AboutMeCC.astro";
+import ProfileFacts from "../components/ProfileFacts.astro";
 ---
 
-<Layout title={`${name} Portfolio - ${label}`}>
-	<main class="relative grid max-w-7xl gap-12 p-8 max-sm:py-16 md:grid-cols-6 md:p-16 xl:gap-24 print:max-w-none print:grid-cols-1 print:gap-6">
-		<div class="space-y-6 md:col-span-2 print:col-span-1 print:grid print:grid-cols-2 print:gap-5 print:space-y-0">
-			<Hero />
-			<!-- <ThemeSwitch /> -->
-		</div>
-		<div class="space-y-12 md:col-span-4 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0">
-			<About />
-			<Experience className="print:col-span-3" />
-			<!-- <Projects className="print:hidden" /> -->
-			<Skills className="print:hidden" />
-			<Education className="order-first" />
-		</div>
-		<Tail />
-	</main>
-
-	<!-- <KeyboardManager /> -->
+<Layout title="JoSecret dot com | Portfolio" description="A simple portfolio created with Astro." scrollSmooth={false}>
+    <>
+        <ProfileInfo/>
+        <ProfileFacts/>
+        <ProfileActionButton/>
+        <TabsButtons client:idle>
+            <ProjectsCC slot="portfolio"/>
+            <AboutMeCC slot="about"/>
+        </TabsButtons>
+    </>
 </Layout>
-
-<style>
-	@page {
-		size: auto;
-		margin: 0mm;
-	}
-	main {
-		margin: auto;
-		width: 100%;
-	}
-</style>

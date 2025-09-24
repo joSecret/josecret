@@ -1,26 +1,40 @@
-import { defineCollection, z } from 'astro:content';
+// 1. Import utilities from `astro:content`
+import {defineCollection, reference, z} from 'astro:content';
 
-const blog = defineCollection({
-	type: 'content',
-	// Type-check frontmatter using a schema
-	schema: z.object({
-		title: z.string(),
-		description: z.string(),
-		// Transform string to Date object
-		pubDate: z.coerce.date(),
-		updatedDate: z.coerce.date().optional(),
-		heroImage: z.string().optional(),
-	}),
+// 2. Import loader(s)
+import { glob } from 'astro/loaders';
+
+// 3. Define your collection(s)
+const posts = defineCollection({
+    loader: glob({ pattern: ['*.md', '*.mdx'], base: 'src/content/posts' }),
+    schema: ({ image }) => z.object({
+        author: z.string().optional(),
+        publishDate: z.date(),
+        updateDate: z.date().optional(),
+        title: z.string(),
+        relatedPosts: z.array(reference('posts')).optional(),
+        tags: z.array(z.string()),
+        description: z.string(),
+        cover: z.object({
+            src: image(),
+            alt: z.string().optional(),
+        }),
+    }),
 });
 
-const experience = defineCollection({
-  type: "content",
-  schema: z.object({
-    company: z.string(),
-    role: z.string(),
-    dateStart: z.coerce.date(),
-    dateEnd: z.union([z.coerce.date(), z.string()]),
-  }),
+const projects = defineCollection({
+    loader: glob({ pattern: "**/*.mdx", base: "./src/content/projects" }),
+    schema: ({ image }) => z.object({
+        title: z.string(),
+        startDate: z.date(),
+        endDate: z.date(),
+        summary: z.string(),
+        url: z.string(),
+        cover: image(),
+        tags: z.array(z.string()),
+        ogImage: z.string()
+    }),
 });
 
-export const collections = { blog, experience };
+// 4. Export a single `collections` object to register your collection(s)
+export const collections = {  projects, posts };

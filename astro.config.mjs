@@ -1,11 +1,25 @@
-import { defineConfig } from 'astro/config';
-import mdx from '@astrojs/mdx';
+// @ts-check
+import {defineConfig} from 'astro/config';
+import mdx from "@astrojs/mdx";
 
-import sitemap from '@astrojs/sitemap';
+import react from "@astrojs/react";
+
 import tailwind from "@astrojs/tailwind";
+
+import icon from "astro-icon";
+
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://josecret.com',
-  integrations: [tailwind(), mdx(), sitemap()],
+    site: 'https://simple-portfolio.vicbox.dev/',
+    integrations: [mdx(), react(), tailwind({
+        applyBaseStyles: false,
+    }), icon(), sitemap()],
+    markdown: {
+        shikiConfig: {
+            theme: 'plastic',
+            wrap: true,
+        },
+    }
 });
