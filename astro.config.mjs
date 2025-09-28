@@ -7,13 +7,15 @@ import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import sitemap from "@astrojs/sitemap";
 
+import partytown from "@astrojs/partytown";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://josecret.github.io/',
   base: '/josecret/',
   integrations: [mdx(), react(), tailwind({
       applyBaseStyles: false,
-  }), icon(), sitemap()],
+  }), icon(), sitemap(), partytown()],
   markdown: {
     shikiConfig: {
       theme: 'plastic',

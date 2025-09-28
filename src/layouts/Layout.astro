@@ -32,36 +32,45 @@ const {
 <!doctype html>
 <html lang={SITE.lang ?? "en"} class={cn({"scroll-smooth": scrollSmooth})}>
 <head>
-    <meta name="msapplication-TileColor" content="#000000"/>
-    <meta name="viewport" content="width=device-width"/>
-    <meta charset="UTF-8"/>
-    <meta name="generator" content={Astro.generator}/>
+  <meta name="msapplication-TileColor" content="#000000"/>
+  <meta name="viewport" content="width=device-width"/>
+  <meta charset="UTF-8"/>
+  <meta name="generator" content={Astro.generator}/>
 
-    <meta name="title" content={title}/>
-    <meta name="description" content={description}/>
-    <meta name="keywords" content={tags.join(', ')}/>
-    <meta name="author" content={author}/>
-    <link rel="sitemap" href="/sitemap-index.xml"/>
-    <link rel="icon" href={SITE.favicon}/>
-    <link rel="canonical" href={canonicalURL}/>
+  <meta name="title" content={title}/>
+  <meta name="description" content={description}/>
+  <meta name="keywords" content={tags.join(', ')}/>
+  <meta name="author" content={author}/>
+  <link rel="sitemap" href="/sitemap-index.xml"/>
+  <link rel="icon" href={SITE.favicon}/>
+  <link rel="canonical" href={canonicalURL}/>
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website"/>
-    <meta property="og:site_name" content={SITE.title}/>
-    <meta property="og:title" content={title}/>
-    <meta property="og:description" content={description}/>
-    <meta property="og:url" content={canonicalURL}/>
-    <meta property="og:image" content={imageOg}/>
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image"/>
-    <meta property="twitter:domain" content="josecret.com"/>
-    <meta property="twitter:url" content={canonicalURL}/>
-    <meta property="twitter:title" content={title}/>
-    <meta property="twitter:description" content={description}/>
-    <meta property="twitter:image" content={imageOg}/>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:site_name" content={SITE.title}/>
+  <meta property="og:title" content={title}/>
+  <meta property="og:description" content={description}/>
+  <meta property="og:url" content={canonicalURL}/>
+  <meta property="og:image" content={imageOg}/>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:domain" content="josecret.com"/>
+  <meta property="twitter:url" content={canonicalURL}/>
+  <meta property="twitter:title" content={title}/>
+  <meta property="twitter:description" content={description}/>
+  <meta property="twitter:image" content={imageOg}/>
 
-    <title>{title}</title>
-    <ClientRouter/>
+  <title>{title}</title>
+  <!-- Google tag (gtag.js) -->
+  <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-NNZGJ773DP"></script>
+  <script type="text/partytown">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag; // Assign gtag to window
+      gtag('js', new Date());
+      gtag('config', 'G-NNZGJ773DP');
+  </script>
+  <ClientRouter/>
 </head>
 <body class="bg-light-theme dark:bg-dark-theme antialiased text-n700 dark:text-light-theme w-full h-screen flex flex-col">
 <Navbar/>
