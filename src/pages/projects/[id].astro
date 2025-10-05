@@ -31,7 +31,6 @@ const { Content } = await render(post);
                 {tags.join(', ')}
             </p>
         </div>
-        <Image transition:name={`${post.id}-image`} class="rounded-2xl" src={cover} alt="Main project image"/>
         <p>
             {summary}
         </p>
@@ -42,6 +41,8 @@ const { Content } = await render(post);
         <article id="article" class="mt-8 prose dark:prose-invert">
             <Content/>
         </article>
+
+        <Image transition:name={`${post.id}-image`} class="rounded-2xl" src={ogImage} alt="Main project image"/>
         <BackToTop />
     </>
 </Layout>

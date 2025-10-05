@@ -22,8 +22,10 @@ if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: 
 ---
 
 <Image
-        class="rounded-full w-[130px] md:w-[140px] object-cover"
-        src={images[imagePath]()}
-        alt="profile avatar"
-        loading="eager"
+  class="rounded-full w-[130px] md:w-[140px] object-cover"
+  src={images[imagePath]()}
+  alt="profile avatar"
+  loading="eager"
+  width={208}
+  height={208}
 />

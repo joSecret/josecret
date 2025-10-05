@@ -31,7 +31,7 @@ const {
 <div class="job--details flex flex-col gap-2">
   <h3 class="text-xl font-bold">{title}</h3>
   <div class="flex items-center gap-2">
-    <Badge className="bg-primary-light dark:bg-primary-dark w-fit rounded-md whitespace-nowrap	">
+    <Badge className="bg-primary-light w-fit rounded-md whitespace-nowrap	">
       {formatDatetime(startDate)} - {currentJob ? "Present" : formatDatetime(endDate)}
     </Badge>
     <p class="truncate">{company}</p>
