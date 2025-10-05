@@ -6,6 +6,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": [ "src/*" ],
+      "@s/*": [ "src/styles/quickskin/*" ],
       "@d/*": [ "src/data/*" ],
       "@ui/*": [ "src/components/ui/*" ],
       "@cv": [ "./cv.json" ]

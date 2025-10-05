@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
-    :root {
-        --radius: 0.5rem
-    }
+  :root {
+    --radius: 0.5rem
+  }
+}
+
+.bg-primary-light {
+  background-color: var(--c-primary-500);
+  color: var(--c-white);
 }
 
 main {
-    @apply flex-grow;
+  @apply flex-grow;
 }
 
 /* Base prose styling */
