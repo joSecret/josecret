@@ -1,0 +1,122 @@
+---
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Snippet: Track Scroll" description="A simple snippet to track scroll position and display it on the screen.">
+  <div class="div demo-div bg-1"></div>
+  <div class="div demo-div bg-2"></div>
+  <div class="div demo-div bg-3"></div>
+  <div class="div demo-div bg-4"></div>
+  <div class="track-scroll">
+    scroll
+  </div>
+
+  <div class="w-scroll">
+    <svg viewBox="0 0 36 36" class="circular-chart blue">
+      <path class="circle-bg"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+      <path class="circle"
+        d="M18 2.0845
+          a 15.9155 15.9155 0 0 1 0 31.831
+          a 15.9155 15.9155 0 0 1 0 -31.831"
+      />
+    </svg>
+  </div>
+</Layout>
+
+<style>
+  .w-scroll {
+    position: fixed;
+    inset: auto 20px 20px auto;
+    width: 100px;
+    height: 100px;
+  }
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 2;
+  }
+
+  .circle {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 0 40;
+    animation: progress-circle;
+    animation-timeline: scroll();
+  }
+
+  .circular-chart.blue .circle {
+    stroke: #3c9ee5;
+  }
+
+  @keyframes progress-circle {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+    100% {
+      stroke-dasharray: 100 100;
+    }
+  }
+
+  .demo-div {
+    height: 100vh;
+    background: var(--color-bg);
+  }
+
+  .bg-1 {
+    --color-bg: var(--c-neutral-100);
+  }
+
+  .bg-2 {
+    --color-bg: var(--c-neutral-200);
+  }
+
+  .bg-3 {
+    --color-bg: var(--c-neutral-300);
+  }
+
+  .bg-4 {
+    --color-bg: var(--c-neutral-400);
+  }
+
+  .track-scroll {
+    position: fixed;
+    inset: auto;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--c-neutral-100);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Code */
+  .track-scroll {
+    &:after {
+      counter-reset: sp var(--scroll-pos);
+      content: counter(sp) '%';
+      animation: scrollpos steps(100);
+      animation-timeline: scroll();
+    }
+  }
+
+  @property --scroll-pos {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+  }
+
+  @keyframes scrollpos {
+    0% {
+      --scroll-pos: 0;
+    }
+    100% {
+      --scroll-pos: 100;
+    }
+  }
+</style>
