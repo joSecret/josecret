@@ -13,7 +13,7 @@ tags:
   - Drush
   - Local Development
 cover:
-  src: './images/install_drupal_with_DDEV/cover.png'
+  src: './images/install_drupal_with_DDEV/cover.webp'
   alt: 'Drupal Installation with DDEV'
 ---
 
