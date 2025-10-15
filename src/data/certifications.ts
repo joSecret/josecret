@@ -4,6 +4,7 @@ interface Certification {
     date: string;
     description: string;
     show: boolean;
+    url?: string;
 }
 
 const certifications: Certification[] = [
@@ -24,13 +25,14 @@ const certifications: Certification[] = [
   {
     name: "Acquia Certified Front-End Specialist",
     issuer: "Acquia",
+    url: "https://certification.acquia.com/person/community/ion-obreja",
     date: "2020",
     description: "Advanced Drupal site building and theming certification",
     show: true
   },
   {
     name: "Adobe Certified Expert (ACE)",
-    issuer: "Adobe§",
+    issuer: "Adobe",
     date: "2020",
     description: "Advanced Adobe tools and technologies certification",
     show: true
