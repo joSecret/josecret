@@ -15,7 +15,7 @@ export const SITE = {
 
 export const ME = {
     name: "Ion Obreja",
-    profession: "Frontend Drupal Developer based in Chisinau. Moldova",
+    profession: "Senior Drupal frontend developer focused on scalable design systems, performance and maintainable architecture.",
     profileImage: "pp2.jpg",
     profileFacts: [
         {
