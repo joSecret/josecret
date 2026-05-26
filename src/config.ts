@@ -36,7 +36,7 @@ export const ME = {
         linkedin: "https://www.linkedin.com/in/ion-obreja/",
         resumeDoc: "resume.pdf",
     },
-    aboutMe: "I’m a Drupal Frontend Developer with 15+ years of experience turning ideas into clean, functional, and user-friendly interfaces. While I specialize in the frontend, I also enjoy exploring the full Drupal ecosystem — from content modeling and views to paragraphs, blocks, and custom theming. My workflow is simple and efficient: modular CSS, PostCSS, Single Directory Components, and only the JavaScript that’s truly needed. This keeps my projects fast, lightweight, and easy to maintain. For me, Drupal isn’t just a platform — it’s where I feel at home, building scalable solutions that last and bringing value to projects of all sizes.",
+    aboutMe: "Senior Drupal frontend developer with 15+ years of experience building scalable, accessible and performance-focused web platforms using modern CSS architecture, Astro and a minimal JavaScript approach. Specialized in component-driven development, Twig-based systems, AI-assisted workflows and maintainable frontend architecture for enterprise and public-sector projects.",
 }
 
 export const SOCIALS = [

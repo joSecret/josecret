@@ -5,64 +5,40 @@ interface SoftSkill {
 
 const softSkills: SoftSkill[] = [
     {
-        name: "Drupal development and theming",
+        name: "Modern CSS architecture",
+        icon: "css"
+    },
+    {
+        name: "Minimal JavaScript",
+        icon: "js"
+    },
+    {
+        name: "Drupal frontend systems",
         icon: "drupal"
     },
     {
-        name: "Responsive web design",
-        icon: "tools-fill"
-    },
-    {
-        name: "Cross-browser compatibility",
+        name: "Reusable components",
         icon: "link"
     },
     {
-        name: "SEO optimization",
-        icon: "arrow-right-up-line"
-    },
-    {
-        name: "Website performance monitoring and optimization",
+        name: "Accessibility",
         icon: "time-fill"
     },
     {
-        name: "Bug troubleshooting and fixing",
+        name: "Performance optimization",
         icon: "tools-fill"
     },
     {
-        name: "Content management systems (CMS)",
+        name: "Semantic HTML",
         icon: "message-2-fill"
     },
     {
-        name: "User experience design (UX)",
+        name: "Maintainable codebases",
         icon: "group-fill"
-    },
-    {
-        name: "Project management and collaboration",
-        icon: "group-fill"
-    },
-    {
-        name: "Attention to detail",
-        icon: "time-line"
-    },
-    {
-        name: "Performance optimization",
-        icon: "arrow-right-up-line"
     },
     {
         name: "Web accessibility standards",
         icon: "message-2-fill"
-    },
-    {
-        name: "Front-end frameworks",
-        icon: "react"
-    },
-    {
-        name: "Version control systems",
-        icon: "github-fill"
-    },
-    {
-        name: "Interface design and implementation",
-        icon: "tools-fill"
     },
     {
         name: "Code documentation and review",
