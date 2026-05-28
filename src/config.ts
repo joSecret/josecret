@@ -36,7 +36,7 @@ export const ME = {
         linkedin: "https://www.linkedin.com/in/ion-obreja/",
         resumeDoc: "resume.pdf",
     },
-    aboutMe: "Senior Drupal frontend developer with 15+ years of experience building scalable, accessible and performance-focused web platforms using modern CSS architecture, Astro and a minimal JavaScript approach. Specialized in component-driven development, Twig-based systems, AI-assisted workflows and maintainable frontend architecture for enterprise and public-sector projects.",
+    aboutMe: "Senior Drupal Frontend Developer with 15+ years of experience building scalable, accessible, and performance-focused web platforms. \n I help teams build clean Drupal frontends fără complexitate inutilă — structured CSS, reusable Twig components, și doar JavaScript-ul necesar. \n Experiența mea acoperă atât design cât și development, deci abordez UI-ul vizual și tehnic — nu doar cod, ci sisteme care rezistă.",
 }
 
 export const SOCIALS = [
