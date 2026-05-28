@@ -46,6 +46,7 @@ const workExperience:WorkExperience[] = [
   {
     title: "Senior Frontend Drupal Developer",
     startDate: "2021-08-01",
+    endDate: "2026-05-01",
     company: "Eau de Web",
     location: "Romania",
     description: "Developed and maintained web applications using Drupal CSS PostCSS.",
