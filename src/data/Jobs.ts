@@ -57,7 +57,7 @@ const workExperience:WorkExperience[] = [
       "Developing and maintaining web applications using Drupal, HTML, and CSS",
       "Collaborating with the team to implement new features and fix bugs",
     ],
-    currentJob: true,
+    currentJob: false,
   },
   {
     title: "Team-lead, Senior Frontend Drupal Developer",
